@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="71">
+    <author>GMNGjoy, GIANTS Software</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Bourgault XR770 Mulcher</en>
+    </title>
+    <description>
+        <en>
+            <![CDATA[Bourgault XR770 Harrow, converted to act as a Mulcher
+            
+Price: 55,000 €
+Working width: 21.3 - 27.4 m
+Required power: 350 hp
+Max. working speed: 12 kph
+]]>
+</en>
+        <de>
+            <![CDATA[Bourgault XR770 Egge, umgebaut, um als Mulcher zu fungieren
+            
+Preis: 55.000 €
+Arbeitsbreite: 21.3 - 27.4 m
+Benötigte Leistung: 350 PS
+Arbeitsgeschwindigkeit: 12 km/h
+]]>
+</de>
+        <fr>
+            <![CDATA[Herse Bourgault XR770, convertie pour servir de broyeur
+            
+Prix: 55.500 €
+Largeur de travail: 21.3 - 27.4 m
+Puissance requise: 350 cv
+Vitesse de travail: 12 km/h
+]]>
+</fr>
+    </description>
+    <iconFilename>icons/icon_xr770Mulcher.dds</iconFilename>
+    <multiplayer supported="true" />
+    
+    <storeItems>
+		<storeItem xmlFilename="xr770Mulcher.xml"/>
+    </storeItems>
+</modDesc>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="mulcherRoll" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="../FS22_bourgaultXR770/xr770.xml">
+        <attributes>
+            <!-- set the new name -->
+            <set path="vehicle.storeData.name" value="XR770 Mulcher"/>
+            <set path="vehicle.storeData.price" value="55000"/>
+            
+            <!-- re-set paths since we're extending it -->
+            <set path="vehicle.storeData.image" value="icons/store_xr770Mulcher.dds"/>
+            <set path="vehicle.base.filename" value="../FS22_bourgaultXR770/xr770.i3d"/>
+
+            <!-- mulcher specific stuff -->
+            <set path="vehicle#type" value="mulcherRoll" />
+            <set path="vehicle.storeData.category" value="mulchers"/>
+            <set path="vehicle.storeData.functions.function(0)" value="$l10n_function_mulcher"/>
+            <set path="vehicle.base.typeDesc" value="$l10n_typeDesc_mulcher"/>
+            <set path="vehicle.workAreas.workArea#type" value="mulcher"/>
+            <set path="vehicle.workAreas.workArea#functionName" value="processMulcherArea"/>
+            <set path="vehicle.workAreas.workArea#needsSetIsTurnedOn" value="false"/>
+
+            <!-- remove the weeder spec -->
+            <remove path="vehicle.weeeder" />
+
+            <!-- add in the mulcher spec -->
+            <set path="vehicle.mulcher.sounds.work#template" value="crushingStubbles"/>
+            <set path="vehicle.mulcher.sounds.work#linkNode" value="xr770_main_component1"/>
+            <set path="vehicle.mulcher.sounds.work#fadeIn" value="0.2"/>
+            <set path="vehicle.mulcher.sounds.work#pitchScale" value="0.8"/>
+
+            <!-- the xr770 uses it's own wheels for some odd reason -->
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(0)#filename" value="wheels/sureGripTraction_21_5L_16_1SL.xml"/>
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(1)#filename" value="wheels/sureGripTraction_21_5L_16_1SL.xml"/>
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(2)#filename" value="wheels/imp1_13_5L_15.xml"/>
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(3)#filename" value="wheels/imp1_13_5L_15.xml"/>
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(4)#filename" value="wheels/imp1_13_5L_15.xml"/>
+            <set path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0).wheels.wheel(5)#filename" value="wheels/imp1_13_5L_15.xml"/>
+            
+            <!-- change what's included to black -->
+            <set path="vehicle.wheels.hubs.color0" value="SHARED_BLACK1" />
+            <set path="vehicle.baseMaterial.material(0).shaderParameter(0)#value" value="SHARED_BLACK2"/>
+
+            <!-- allow base material color configuration -->
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.baseMaterialConfigurations#defaultColorIndex" value="8"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#name" value="xr770_mat"/>
+            <set path="vehicle.baseMaterialConfigurations.material(0)#shaderParameter" value="colorMat0"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#name" value="Bourgault Red"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(0)#color" value="BOURGAULT_RED1"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#name" value="Bourgault Yellow"/>
+            <set path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration(1)#color" value="BOURGAULT_YELLOW1"/>
+        
+            <!-- allow rim color configurations -->
+            <set path="vehicle.rimColorConfigurations#useDefaultColors" value="true"/>
+            <set path="vehicle.rimColorConfigurations#defaultColorIndex" value="7"/>
+            <set path="vehicle.rimColorConfigurations#price" value="0"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#name" value="Bourgault Red"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(0)#color" value="BOURGAULT_RED1"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#name" value="Bourgault Yellow"/>
+            <set path="vehicle.rimColorConfigurations.rimColorConfiguration(1)#color" value="BOURGAULT_YELLOW1"/>
+        </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>XR770 Mulcher</name>
+        <image>icons/store_xr770Mulcher.dds</image>
+        <brand>BOURGAULT</brand>
+        <category>mulchers</category>
+    </storeData>
+</vehicle>
