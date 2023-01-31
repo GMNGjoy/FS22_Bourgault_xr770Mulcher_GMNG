@@ -10,3 +10,18 @@ Both mods `FS22_bourgaultXR770.zip` & `FS22_Bourgault_xr770Mulcher_GMNG.zip` are
 2. Download the Bourgault XR770 Harrow from ModHub, and put the zip [`FS22_bourgaultXR770.zip`] in your mod folder.
 4. Launch the game, when selecting mods for use - if you only want the Mulcher version, only check that mod. Checking the original Harrow mod is not required for the Mulcher to work - the original mod just needs to be in your mod folder, but doesn't need to be checked as one of your active mods when choosing mods.
 5. Purchase the item in game as normal, and use as you would expect.
+
+
+## Screenshots
+
+![Mulcher in the store](/_screenshots/mulcher_store.png)
+_XR770 Mulcher in store, showing color & rim customization_
+
+![Mulcher destroying a fresh crop](/_screenshots/mulcher_crop.png)
+_XR770 Mulcher destroying a fresh crop_
+
+![Mulcher destroying crop stubble](/_screenshots/mulcher_stubble.png)
+_XR770 Mulcher destroying crop stubble_
+
+![Mulcher vs Harrow](/_screenshots/mulcher_vs_harrow.png)
+_XR770 Mulcher vs Harrow on NML grass_
